@@ -13,24 +13,20 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`runningOnM1()`](#runningonm1)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### runningOnM1()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+runningOnM1() => Promise<{ result: boolean; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ result: boolean; }&gt;</code>
 
 --------------------
 

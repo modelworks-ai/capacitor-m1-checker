@@ -9,10 +9,7 @@ import Capacitor
 public class M1CheckerPlugin: CAPPlugin {
     private let implementation = M1Checker()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.resolve([
-            "value": implementation.echo(value)
-        ])
+    @objc func runningOnM1(_ call: CAPPluginCall) {
+        call.resolve(["result" : implementation.runningOnM1()])
     }
 }

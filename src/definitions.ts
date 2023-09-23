@@ -1,3 +1,3 @@
 export interface M1CheckerPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  runningOnM1(): Promise<{result: boolean}>;
 }

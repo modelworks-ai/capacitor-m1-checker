@@ -13,10 +13,8 @@ public class M1CheckerPlugin extends Plugin {
 
     @PluginMethod
     public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+        JSObject result = new JSObject();
+        result.setMember("result", false);
+        call.resolve(result);
     }
 }
