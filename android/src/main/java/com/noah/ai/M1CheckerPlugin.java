@@ -14,7 +14,7 @@ public class M1CheckerPlugin extends Plugin {
     @PluginMethod
     public void echo(PluginCall call) {
         JSObject result = new JSObject();
-        result.setMember("result", false);
+        result.put("result", false);
         call.resolve(result);
     }
 }

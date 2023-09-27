@@ -4,7 +4,7 @@ import android.util.Log;
 
 public class M1Checker {
 
-    public String runningOnM1() {
+    public boolean runningOnM1() {
         return false;
     }
 }
